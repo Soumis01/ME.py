@@ -20,6 +20,13 @@ def borrar():
     e_texto.delete(0, END)
     i = 0
 
+def operaciones():
+    ecuacion = e_texto.get() # Optiene todo lo que hay en la caja de texto
+    resultado = eval(ecuacion) # Resultado 
+    e_texto.delete(0, END) # Borra lo que esta en la caja 
+    e_texto.insert(0 , resultado) # Muestra el resultado
+
+    i = 0
 
 # Botones
 boton1= Button(ventana, text = '1', width = 5, height= 2, command= lambda: click_boton(1))
@@ -42,7 +49,7 @@ boton_suma = Button(ventana, text = '+', width = 5, height= 2, command= lambda: 
 boton_resta = Button(ventana, text = '-', width = 5, height= 2, command= lambda: click_boton('-'))
 boton_div = Button(ventana, text = '/', width = 5, height= 2, command= lambda: click_boton('/'))
 boton_multi = Button(ventana, text = '*', width = 5, height= 2, command= lambda: click_boton('*'))
-boton_igual = Button(ventana, text = '=', width = 5, height= 2, command= lambda: click_boton('='))
+boton_igual = Button(ventana, text = '=', width = 5, height= 2, command= lambda: operaciones())
 
 #Agregar botones a la pantalla
 boton_borrar.grid(row= 1 , column= 0, padx= 5, pady= 5)
