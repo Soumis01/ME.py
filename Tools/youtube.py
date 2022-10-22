@@ -1,4 +1,3 @@
-
 from pytube import YouTube
 import os
 from tkinter import *
@@ -20,7 +19,7 @@ def popup():
 # Creamos y nombramos la ventana 
 root = Tk()
 root.config(bd=8)
-root.title("Descargar Videos")
+root.title("By Jade Magallnes")
 
 # Ponemos una imagen en un widget
 imagen = PhotoImage(file="youtube.png")
