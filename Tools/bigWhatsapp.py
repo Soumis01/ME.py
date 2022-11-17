@@ -1,11 +1,12 @@
 import pyautogui, webbrowser
 from time import sleep
 
-webbrowser.open('https://web.whatsapp.com/sed?phone=+18293206225') # link de la pagina
+webbrowser.open('https://web.whatsapp.com/sed?phone=+') # Colocar numero
 
-sleep = 10 # Espera 10 segundos para ejecutar el script
+sleep = 20 # Espera 10 segundos para ejecutar el script
 
-for i in range(200):
-    pyautogui.typewrite('Hola, esto es un script hecho en python jeje')
+for i in range(100):
+    pyautogui.typewrite('Despierta!!!')
     pyautogui.press('enter')
+
 
